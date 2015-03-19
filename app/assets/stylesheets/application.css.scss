@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+
+$start: #f53a34;
+$end: #fc9d3c;
+body {
+  background-color: $start;
+  background-repeat: repeat-y;
+
+  background: -webkit-gradient(linear, left top, right top, from($start), to($end));
+  background: -webkit-linear-gradient(left, $end, $start);
+  background: -moz-linear-gradient(left, $end, $start);
+  background: -ms-linear-gradient(left, $end, $start);
+  background: -o-linear-gradient(left, $end, $start);
+
+  font-family: Helvetica, Arial, serif;
+  font-weight: bold;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img.logo {
+  margin: 20px;
+  width: 260px;
+}
+
+.conteudo {
+  color: #fff;
+  
+  h1, h2, h3 {
+    font-weight: 700;
+  }
+
+  .lead {
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -1px;
+  }
+}

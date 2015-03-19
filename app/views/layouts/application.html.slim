@@ -3,14 +3,12 @@ html
   head
     meta[name="viewport" content="width=device-width, initial-scale=1.0"]
     title
-      = content_for?(:title) ? yield(:title) : 'Letralivre'
-    meta name="description" content="#{content_for?(:description) ? yield(:description) : 'Letralivre'}"
+      = content_for?(:title) ? yield(:title) : 'Suporte Acadêmico'
+    meta name="description" content="#{content_for?(:description) ? yield(:description) : 'Suporte Acadêmico'}"
+    link rel="shortcut icon" type="image/x-icon" href="#{image_path('favicon.png')}"
     == stylesheet_link_tag "application", :media => 'all', 'data-turbolinks-track' => true
     == javascript_include_tag 'application', 'data-turbolinks-track' => true
     == csrf_meta_tags
   body
-    header
-      == render 'layouts/navigation'
     main[role="main"]
-      == render 'layouts/messages'
       == yield
