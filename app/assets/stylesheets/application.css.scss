@@ -14,40 +14,104 @@
  *= require_self
  */
 
-$start: #f53a34;
-$end: #fc9d3c;
-body {
-  background-color: $start;
-  background-repeat: repeat-y;
+// $start: #f53a34;
+// $end: #fc9d3c;
+$start: rgba(71, 71, 71, 0.59);
+$end: rgba(252, 157, 60, 0.39);
+// $end: rgba(71, 71, 71, 0.39);
+// background-color: rgba(71, 71, 71, 0.59);
+// body {
+//   background-color: $start;
+//   background-repeat: repeat-y;
 
-  background: -webkit-gradient(linear, left top, right top, from($start), to($end));
-  background: -webkit-linear-gradient(left, $end, $start);
-  background: -moz-linear-gradient(left, $end, $start);
-  background: -ms-linear-gradient(left, $end, $start);
-  background: -o-linear-gradient(left, $end, $start);
+  // background: -webkit-gradient(linear, left top, right top, from($start), to($end));
+  // background: -webkit-linear-gradient(left, $end, $start);
+  // background: -moz-linear-gradient(left, $end, $start);
+  // background: -ms-linear-gradient(left, $end, $start);
+  // background: -o-linear-gradient(left, $end, $start);
 
-  font-family: Helvetica, Arial, serif;
-  font-weight: bold;
+//   font-family: Helvetica, Arial, serif;
+//   font-weight: bold;
 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
 
-img.logo {
-  margin: 20px;
-  width: 260px;
-}
+// img.logo {
+//   margin: 20px;
+//   width: 260px;
+// }
 
-.conteudo {
-  color: #fff;
+// .conteudo {
+//   color: #fff;
   
-  h1, h2, h3 {
-    font-weight: 700;
-  }
+//   h1, h2, h3 {
+//     font-weight: 700;
+//   }
 
-  .lead {
-    font-weight: 700;
-    line-height: 100%;
-    letter-spacing: -1px;
+//   .lead {
+//     font-weight: 700;
+//     line-height: 100%;
+//     letter-spacing: -1px;
+//   }
+// }
+
+body {
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar {
+  // font-family: 'Raleway';
+  text-shadow: 1px 1px 1px #000;
+  -webkit-text-shadow: 1px 1px 1px #000;
+  -moz-text-shadow: 1px 1px 1px #000;
+}
+
+.video-section { 
+  margin: 0;
+  margin-top: -120px;
+
+  .pattern-overlay {
+    background-color: rgba(71, 71, 71, 0.59);
+    padding: 110px 0 32px;
+    min-height: 596px;
+    /* Incase of overlay problems just increase the min-height*/
+    text-shadow: 1px 1px 1px #000;
+    -webkit-text-shadow: 1px 1px 1px #000;
+    -moz-text-shadow: 1px 1px 1px #000;
+
+    background: -webkit-gradient(linear, left top, right top, from($start), to($end));
+    background: -webkit-linear-gradient(left, $end, $start);
+    background: -moz-linear-gradient(left, $end, $start);
+    background: -ms-linear-gradient(left, $end, $start);
+    background: -o-linear-gradient(left, $end, $start);
+
+    color:#fff;
+
+    h1{
+      // font-weight:bold;
+      margin: 60px auto;
+      text-align:center;
+    }
+
+    .advantage {
+      margin-top: 20px;
+      color: #fff;
+      text-align: center;
+      font-family: 'Raleway';
+
+      i.fa {
+        font-size: 4em;
+      }
+    }
+  }
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  .container {
+    padding: 40px 0;
   }
 }

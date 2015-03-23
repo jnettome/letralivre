@@ -1,0 +1,70 @@
+= render 'layouts/navigation'
+section.content-section.video-section
+  .pattern-overlay
+    .container
+      .row
+        .col-lg-12
+          h1 
+            | Está precisando de revisão, atualizar seu curriculum Lattes, tradução e outros trabalhos acadêmicos?
+            | <br> 
+            | <strong>Nós lhe damos o suporte.</strong>
+          
+      .row
+        .col-lg-4.advantage
+          i.fa.fa-cloud-upload
+          p.lead Produza - Publique <br> Invista em sua carreira
+        .col-lg-4.advantage
+          i.fa.fa-lock
+          p.lead Nós oferecemos <br>suporte anônimo <strong>seguro</strong>
+        .col-lg-4.advantage
+          i.fa.fa-check
+          p.lead Você só paga depois de receber,<br>avaliar e aprovar nosso trabalho 
+
+main[role="main"]
+  section.start-section
+    p.lead Temos mais de 5.000 profissionais cadastrados pelo país, oferencendo os mais diversos serviços acadêmicos. Todos foram submetidos a treinamentos e avaliados nas funções específicas.
+
+    p Consulte nossa listagem de tarefas já disponíveis. Caso tenha alguma necessidade específica, favor nos encaminhar sua solicitação.
+
+  ul
+    li Preenchimento de formulário para pesquisa e bolsistas do CNPQ
+    li Atualização de currículum Lattes
+    li Colocação do texto de acordo com as normas técnicas da ABNT
+    li Tradução nos mais diversos idiomas
+    li Serviços de ghost writer para: monografia, discertação, confecção de resenhas, Abstrat e teses
+    li Adaptação da linguagem acadêmica para uma linguagem coloquial
+    li Adaptação da linguagem coloquial para a linguagem academia
+        (com citações e adequações linguísticas)</li>
+    li Reescrita de textos acadêmicos para  publicação em outra revista
+    li Apresentação em Power Point
+
+
+  h4 Cadastre-se
+
+  a.btn href="#" Estou precisando de Suporte Acadêmico
+  a.btn href="#" Estou oferecendo Suporte Acadêmico
+
+/ <div class="embed-responsive embed-responsive-16by9">
+/   <iframe class="embed-responsive-item" src="..."></iframe>
+/ </div>
+
+  p Você faz trabalhos de revisão? Faz monografias? Sente-se seguro em reescrever um texto? Sente-se seguro e apto a desenvolver uma tese? Você conhece a plataforma Latter? Faz tradução? Cadastre-se
+
+footer
+  .container
+    .row
+      .col-lg-12
+        p Brazil Academic Publishing
+
+javascript:
+  $(document).ready(function () {
+    $(".video-section").vide("#{image_path('7542959.mp4')}", {
+      volume: 0,
+      playbackRate: 1,
+      muted: true,
+      loop: true,
+      autoplay: true,
+      position: "50% 50%",
+      resizing: true 
+    });
+  });
