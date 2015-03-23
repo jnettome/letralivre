@@ -6,8 +6,10 @@ html
       = content_for?(:title) ? yield(:title) : 'Suporte Acadêmico'
     meta name="description" content="#{content_for?(:description) ? yield(:description) : 'Suporte Acadêmico'}"
     link rel="shortcut icon" type="image/x-icon" href="#{image_path('favicon.png')}"
+    == stylesheet_link_tag "//fonts.googleapis.com/css?family=Raleway:400,600,700", :media => 'all', 'data-turbolinks-track' => true
     == stylesheet_link_tag "application", :media => 'all', 'data-turbolinks-track' => true
     == stylesheet_link_tag "//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css", :media => 'all', 'data-turbolinks-track' => true
+
     == javascript_include_tag 'application', 'data-turbolinks-track' => true
     == csrf_meta_tags
   body
